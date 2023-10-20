@@ -9,21 +9,13 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@Table(name = "users")
 public class User {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String firstname;
-    @Column(unique = true, nullable = false)
     private String matricule;
     private String lastname;
     private String phone;
     private String email;
-
-    public User(String firstname, String matricule, String lastname, String phone, String email) {
-        this.firstname = firstname;
-        this.matricule = matricule;
-        this.lastname = lastname;
-        this.phone = phone;
-        this.email = email;
-    }
 }

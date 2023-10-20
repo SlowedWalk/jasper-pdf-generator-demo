@@ -8,4 +8,9 @@ import lombok.*;
 @NoArgsConstructor
 @Builder
 public class InvoiceData {
+    private String firstname;
+    private String matricule;
+    private String lastname;
+    private String phone;
+    private String email;
 }

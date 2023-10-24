@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import tech.hidetora.pdfinvoice.entity.User;
-import tech.hidetora.pdfinvoice.repository.UserRepository;
 import tech.hidetora.pdfinvoice.service.UserService;
 
 import java.io.FileInputStream;
